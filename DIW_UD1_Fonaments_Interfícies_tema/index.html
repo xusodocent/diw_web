@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ca" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -58,12 +58,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +76,7 @@
       
         
         <a href="#1-estructura" class="md-skip">
-          Skip to content
+          Salta el contingut
         </a>
       
     </div>
@@ -84,7 +88,7 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
     <a href=".." title="DISSENY D&#39;INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner" class="md-header__button md-logo" aria-label="DISSENY D'INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner" data-md-component="logo">
       
   <img src="../img/logocap.png" alt="logo">
@@ -112,6 +116,30 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Format oscur"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Format oscur" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Format clar"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Format clar" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
     
@@ -123,16 +151,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Cerca">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
@@ -143,7 +171,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Inicialitzant cerca
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -163,7 +191,7 @@
         
           
             
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -242,7 +270,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="DISSENY D&#39;INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner" class="md-nav__button md-logo" aria-label="DISSENY D'INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner" data-md-component="logo">
       
@@ -350,14 +378,14 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Taula de continguts
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -755,14 +783,14 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Taula de continguts
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -1031,8 +1059,8 @@
 </ul>
 <blockquote>
 <p>Un <code>breadcrumb</code> (o "migas de pan" en castellà) en una interfaz web és una representació visual d'una estructura jeràrquica de pàgines web. Aquesta característica ajuda als usuaris a entendre la seva ubicació actual dins d'un lloc web i a navegar fàcilment cap enrere a les pàgines anteriors o cap amunt en la jerarquia del lloc.
- <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Inici &gt; Secció Principal &gt; Subsecció &gt; Pàgina Actual
-</span></code></pre></div></p>
+ <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Inici &gt; Secció Principal &gt; Subsecció &gt; Pàgina Actual
+</span></code></pre></div></td></tr></table></div></p>
 <p>Una <strong>landing page</strong> o pàgina d'aterratge és una pàgina dins d'un lloc web, desenvolupada amb l'objectiu de convertir als visitants en <code>leads</code> (clients potencials que mostren interés a consumir un producte o servei, usualment deixant les seues dades personals de contacte). Generalment té un disseny molt senzill amb pocs enllaços, informació bàsica sobre l'empresa i un formulari que facilita la conversió.</p>
 </blockquote>
 <h3 id="14-colors">1.4 Colors</h3>
@@ -1040,29 +1068,29 @@
 <ul>
 <li><strong>Noms predefinits:</strong> HTML inclou una llista de noms de colors predefinits que pots utilitzar. Aquests noms de colors són fàcils d'entendre i utilitzar, i inclouen colors com "red" (vermell), "blue" (blau), "green" (verd), "yellow" (groc), entre d'altres. Per exemple:</li>
 </ul>
-<p><div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: red;&quot;</span><span class="p">&gt;</span>Aquest text és de color roig.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></code></pre></div>
+<p><div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: red;&quot;</span><span class="p">&gt;</span>Aquest text és de color roig.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
 En <a href="https://htmlcolorcodes.com/es/nombres-de-los-colores/">aquest enllaç</a> tens tota la llista de colors per nomenclatura.</p>
 <ul>
 <li><strong>HEXADECIMAL:</strong> Els codis de colors HEX utilitzen una combinació de sis dígits hexadecimals (0-9 i A-F) per representar un color. Els dos primers dígits representen la quantitat de vermell, els dos següents la quantitat de verd, i els dos últims la quantitat de blau.</li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #FF0000;&quot;</span><span class="p">&gt;</span>Aquest text és de color vermell utilitzant codi HEX.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></code></pre></div>
+<div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #FF0000;&quot;</span><span class="p">&gt;</span>Aquest text és de color vermell utilitzant codi HEX.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>RGB:</strong> Pots representar colors mitjançant codis de colors RGB (Red, Green, Blue). Aquesta notació utilitza tres valors numèrics per a cada canal de color (0-255) per especificar la quantitat de roig, verd i blau en un color. </li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: rgb(255, 0, 0);&quot;</span><span class="p">&gt;</span>Aquest text és de color roig utilitzant codi RGB.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></code></pre></div>
+<div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: rgb(255, 0, 0);&quot;</span><span class="p">&gt;</span>Aquest text és de color roig utilitzant codi RGB.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>RGBA:</strong> Els codis de colors RGBA són similars als codis RGB, però inclouen un quart valor que representa l'alfa (transparència) del color. L'alfa pot ser un valor decimal entre 0 (totalment transparent) i 1 (totalment opac). </li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: rgba(255, 0, 0, 0.5);&quot;</span><span class="p">&gt;</span>Aquest text és de color vermell amb una transparència del 50%.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></code></pre></div>
+<div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: rgba(255, 0, 0, 0.5);&quot;</span><span class="p">&gt;</span>Aquest text és de color vermell amb una transparència del 50%.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>Gradients CSS:</strong> També pots utilitzar gradients CSS per crear transicions de colors suaus en un element. Aquesta tècnica et permet especificar punts de color i direccions per crear efectes de gradient. </li>
 </ul>
-<p><div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: linear-gradient(to right, red, yellow);&quot;</span><span class="p">&gt;</span>Aquest div té un gradient roig a groc.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></code></pre></div>
+<p><div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: linear-gradient(to right, red, yellow);&quot;</span><span class="p">&gt;</span>Aquest div té un gradient roig a groc.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
 Els <code>Color Picker</code> són eines d'utilitat per a provar la representació dels colors en els diferents codis. <a href="http://w3schools-fa.ir/colors/colors_picker11e1.html?colorhex=8A2BE2#gsc.tab=0">Ací</a> pots fer proves amb el de la <strong>3Wschool</strong>.</p>
 <h3 id="15-components">1.5 Components</h3>
 <p>En la següent figura podem vore els components principals d'una interfície web general.</p>
@@ -1354,7 +1382,7 @@ Els <code>Color Picker</code> són eines d'utilitat per a provar la representaci
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "content.code.copy"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
     
     
       <script src="../assets/javascripts/bundle.726fbb30.min.js"></script>
