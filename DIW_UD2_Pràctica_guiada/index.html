@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../DIW_UD2_Pr%C3%A0ctica_guiada/">
+        <link rel="prev" href="../DIW_UD2_introducci%C3%B3_css/">
       
+      
+        <link rel="next" href="../DIW_UD2_Prac_CSS/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>UD2 - INTRODUCCIÓ A CSS - DISSENY D'INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner</title>
+        <title>UD2 Pràctica guiada (no entregar) - DISSENY D'INTERFÍCIES WEB - 2DAW - Xuso Ortí I Josep Magraner</title>
       
     
     
@@ -73,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#maquetacio-web" class="md-skip">
+        <a href="#practica-guiada" class="md-skip">
           Salta el contingut
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UD2 - INTRODUCCIÓ A CSS
+              UD2 Pràctica guiada (no entregar)
             
           </span>
         </div>
@@ -532,26 +534,6 @@
                 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../DIW_UD2_Pr%C3%A0ctica_guiada/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    UD2 Pràctica guiada (no entregar)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -565,7 +547,7 @@
           
   
   <span class="md-ellipsis">
-    UD2 Pràctica Maquetació
+    UD2 Pràctica guiada (no entregar)
   </span>
   
 
@@ -576,7 +558,7 @@
         
   
   <span class="md-ellipsis">
-    UD2 Pràctica Maquetació
+    UD2 Pràctica guiada (no entregar)
   </span>
   
 
@@ -596,8 +578,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#maquetacio-web" class="md-nav__link">
-    Maquetació web
+  <a href="#practica-guiada" class="md-nav__link">
+    Pràctica guiada
   </a>
   
 </li>
@@ -606,6 +588,26 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DIW_UD2_Prac_CSS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD2 Pràctica Maquetació
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -651,8 +653,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#maquetacio-web" class="md-nav__link">
-    Maquetació web
+  <a href="#practica-guiada" class="md-nav__link">
+    Pràctica guiada
   </a>
   
 </li>
@@ -672,162 +674,69 @@
                   
 
 
-  <h1>UD2 Pràctica Maquetació</h1>
+  <h1>UD2 Pràctica guiada (no entregar)</h1>
 
-<h2 id="maquetacio-web">Maquetació web</h2>
-<p>Partint dels <a href="../recursos/ud1/curso.zip">arxius</a> que es proporcionen a la plataforma, confecciona el <code>CSS</code> per tal d'obtindre un resultat com el següent:</p>
-<p><img alt="Resultat a obtindre" src="../img/resultat_prac.jpg" /></p>
-<p>L'estructura de la pàgina serà pràcticament igual a la de l'exercici anterior, la podeu veure en el fitxer <strong>index.HTML</strong>, tindrem un <code>&lt;div id="page"&gt;</code> que serà el contenidor de tota la pàgina, i dins d'aquest, tindrem els següents
-elements:</p>
-<ul>
-<li>Un <code>&lt;div id="header"&gt;</code> que contindrà un <code>&lt;h1&gt;</code> amb el títol de la pàgina.</li>
-<li>Un <code>&lt;div id="nav"&gt;</code> que contindrà una llista desordenada amb els enllaços del
-menú de navegació.</li>
-<li>Un &lt;<em>div id="</em>content"&gt; que contindrà tres <code>&lt;div class="article"&gt;</code>.
-Cada <code>&lt;div class="article"&gt;</code> contindrà un <code>&lt;div class="article_header"&gt;</code> que, al seu torn, contindrà una imatge i un <code>&lt;h2&gt;</code> amb el títol de l'article. El <code>&lt;div class="article"&gt;</code> també contindrà un parell de paràgrafs de text. Després del <code>&lt;div id="content"&gt;</code> tenim un <code>&lt;div id="footer"&gt;</code> amb el peu de pàgina que contindrà un paràgraf de text.</li>
-</ul>
-<p>Si visualitzeu el fitxer <strong>index.html</strong> en el vostre navegador, observareu que la pàgina
-no apareix com es mostra en la imatge. Això és perquè el fitxer <strong>estils.css</strong> de la carpeta *css està buit. El que heu de fer en aquest exercici és completar els estils necessaris perquè la pàgina es mostre com s'espera.</p>
-<p>A continuació, veurem els estils que hem de crear:</p>
-<ul>
-<li>Utilitzant el selector universal, configurarem a *0px el marge intern i
-extern de tots els elements.</li>
-</ul>
-<p>Element <code>&lt;body&gt;</code>:</p>
-<ul>
-<li>Marge intern superior 20px.</li>
-<li>Text alineat al centre.</li>
-<li>Imatge de fons "../imgs/old_map.png". Per a canviar la imatge de fons d'un element, utilitzarem la propietat <code>background-image</code>.</li>
-</ul>
-<p>Com el fitxer d'estils està en la carpeta <em>css i les imatges en la carpeta </em>imgs, haurem d'indicar la ruta relativa des del lloc on estan els estils fins al lloc on estan les imatges, en
-aquest cas "../imgs/old_map.png". Quan indiquem la ruta d'unrecurs en un fitxer d'estils, hem d'utilitzar la funció *url, per tant, per a canviar la imatge de fons, farem el següent:
-<code>background-image: url("../imgs/old_map.png");</code></p>
-<p>Element <code>page</code>:</p>
-<ul>
-<li>Tindrà un ample de *960px.</li>
-<li>Els marges superior i inferior seran de *0px, mentre que l'esquerre i dret seran automàtics.</li>
-<li>El text estarà alineat a l'esquerra.</li>
-</ul>
-<p>Element <code>header</code>:</p>
-<ul>
-<li>La font *Courier de color blanc i grandària 1em2.</li>
-<li>La vora inferior tindrà 6px, serà negre i d'estil sòlid.</li>
-<li>El color de fons serà #313B44.</li>
-</ul>
-<p>Si observem la capçalera de la pàgina, al costat del títol de la mateixa apareix una imatge amb els logos de <code>html</code>, <code>CSS</code> i <code>javascript</code>.</p>
-<p>Veiem que en l'arxiu <strong>index.html</strong> no tenim cap element <code>&lt;img&gt;</code>, així que, podem deduir que aquesta imatge es troba en els estils de la pàgina. En general, quan una imatge té més relació amb l'aspecte visual de la pàgina que amb els continguts d'aquesta, la introduirem sempre per mitjà dels estils.</p>
-<p>Vegem com hem de configurar els estils de l'element <code>&lt;h1&gt;</code> per a aconseguir aquesta aparença:</p>
-<ul>
-<li>La imatge de fons serà "../imgs/logo.png".</li>
-<li>Per defecte, quan col·loquem una imatge de fons xicoteta en un element més gran, la imatge es repetirà en mosaic fins a emplenar tot l'element. Per a controlar aquest comportament disposem de la propietat <code>background-repeat</code>. Com en aquest cas ens interessa que la imatge no es repetisca, assignarem el valor <code>no-repeat</code>. Per a més informació sobre aquesta propietat, podeu
-consultar la <a href="http://www.w3schools.com/cssref/pr_background-repeat.asp">w3school</a>.</li>
-<li>Quan una imatge de fons no es repeteix, podem indicar en quina posició volem que aparega utilitzant la propietat <code>background-position</code>. En aquest cas, ens interessa que aparega desplaçada 25px a l'esquerra i centrada verticalment, per tant, indicarem els següents valors: <code>background-position: 25px center;</code>. Per a més informació sobre aquesta propietat, podeu consultar
-la <a href="http://www.w3schools.com/cssref/pr_background-position.asp">w3school</a>.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Problema amb els píxels<p>Quan utilitzem grandàries de fonts indicats en píxels ens trobem amb un problema: les
-versions d'Internet Explorer anteriors a la 9 no redimensionaran les fonts quan s'utilitza el zoom en el navegador (Ctrl +). Per a evitar aquest problema, W3C recomana l'ús de la unitat de mesura em. 1em és igual a la grandària de font actual. La grandària de font per defecte en els navegadors és de 16px, per tant, 1em serà igual a 16px. Per a convertir els *em a píxels utilitzarem la següent fórmula: em=píxels/16</p>
-</p>
-</div>
-<p>Si observem la pàgina en aquest moment, veurem que el text de l'element <code>&lt;h1&gt;</code> es col·loca sobre la imatge de fons, la qual cosa, no és molt apropiat. Per a solucionar aquest problema, li posarem uns marges interns superior i inferior de 20px i uns marges
-interns esquerre i dret de 100px.</p>
-<p>Element <code>nav</code>:</p>
-<ul>
-<li>La font serà <code>courier</code> de grandària 1.4em i color silver.</li>
-<li>El text estarà alineat al centre.</li>
-<li>La imatge de fons serà una textura que es repetirà fins a emplenar tot l'element: "../imgs/red015.jpg".</li>
-</ul>
-<p>Vegem ara com canviarem la llista d'enllaços que es troba dins de l'element *nav perquè prenga l'aspecte que ens interessa:</p>
-<ul>
-<li>Per als elements <code>&lt;li&gt;</code> de la llista desordenada tindrem una part comuna per a tots ells i una altra individual, ja que, cada opció de menú té una imatge diferent. Per aquest motiu, hem posat un id a cadascun d'ells. Vegem, en primer lloc, els estils comuns que tenen els <code>&lt;li&gt;</code> que estan dins del <code>nav</code>:</li>
-<li>Necessitem tindre espai suficient perquè ens càpien les imatges de cadascun dels enllaços, per tant, li posarem un marge intern superior de 80px.</li>
-<li>Els marges externs els configurarem de la següent forma: superior 0px, dret 100px, inferior 20px i esquerre 100px.</li>
-<li>Eliminarem el <code>bullet</code> o vinyeta que col·loca el navegador per defecte en les llistes.</li>
-<li>Els col·locarem en posició horitzontal convertint-los en elements <code>inline-block</code>.</li>
-<li>El text estarà centrat.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Inline o Block<p>Un element de tipus <code>inline-block</code> (<code>display: inline-block</code>) es comporta com si fora de bloc, però respecte als elements que l'envolten és un element en línia, la qual cosa permet, per exemple, establir-li uns marges interns i/o externs.</p>
-</p>
-</div>
-<ul>
-<li>Col·locarem el cursor per defecte perquè quan situem el ratolí sobre l'element sense enllaç aparega el cursor adequat.</li>
-<li>En cadascun dels elements <li> hem de col·locar la imatge adequada, per a això, utilitzarem els identificadors dels mateixos per a seleccionar-los:</li>
-</ul>
-<p>Element <code>continguts</code>:</p>
-<ul>
-<li>Imatge "../imgs/book.png", eliminar repetició i posició centrada horitzontalment i a 10px de la vora superior.</li>
-</ul>
-<p>Element <code>vídeos</code>:</p>
-<ul>
-<li>Imatge "../imgs/film.png", eliminar repetició i posició centrada horitzontalment i a 10px de la vora superior.</li>
-</ul>
-<p>Element <code>contacte</code>:</p>
-<ul>
-<li>Imatge "../imgs/mail.png", eliminar repetició i posició centrada horitzontalment i a 10px de la vora superior.</li>
-</ul>
-<p>Per als enllaços:</p>
-<ul>
-<li>Eliminarem el subratllat.</li>
-<li>Color de la font <code>orange</code>.</li>
-<li>Color de la font quan el ratolí està sobre ells *white.</li>
-</ul>
-<p>Element <code>content</code>:</p>
-<ul>
-<li>Font verdana de grandària 0.8em.</li>
-<li>Imatge de fons "../imgs/lgrey008.jpg".</li>
-</ul>
-<p>Elements de la classe article:</p>
-<ul>
-<li>Ample de 240px.</li>
-<li>Vora de 1px color lightgray i estil sòlid.</li>
-<li>Color de fons white.</li>
-<li>Text alineat al centre.</li>
-<li>Alt de línia de 1.8em (propietat <code>line-height</code>).</li>
-<li>Els marges interns els configurarem de la següent forma: esquerre, dret i superior 5px, inferior 22px.</li>
-<li>Els marges externs seran de 30px.</li>
-<li>Els elements d'aquesta classe han de col·locar-se un al costat de l'altre, per tant, indicarem que suren a l'esquerra. Si observem la pàgina després de posar els elements article flotants, veiem que ha desaparegut la textura de l'element *content. És com si aquest element haguera passat a tindre un alt de 0px. Això ocorre perquè, en contindre només elements flotants, l'element content pensa que està buit. Anteriorment, per a solucionar aquest problema, bastava
-amb posar els estils <code>overflow: hidden</code>; i <code>height: 1%;</code> a l'element <code>content</code>. Per a més informació podeu consultar el <a href="http://librosweb.es/css_avanzado/capitulo_1/limpiar_floats.html">següent enllaç</a>. Però, en realitzar algunes proves amb Internet Explorer 11 m'he
-trobat amb alguns problemes, així que utilitzarem la solució que es proposa en la <a href="http://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/">següent enllaç</a>. En concret, el que farem serà construir els estils de l'element <code>content</code> de la següent forma:</li>
-</ul>
-<p><div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="err">`</span><span class="p">.</span><span class="nc">clearfix</span><span class="p">:</span><span class="nd">before</span><span class="err">`</span><span class="o">,</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">.</span><span class="nc">clearfix</span><span class="p">:</span><span class="nd">after</span><span class="o">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">#</span><span class="nn">content</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="err">…</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">width</span><span class="p">:</span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="o">*</span><span class="kc">table</span><span class="p">;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
+<h2 id="practica-guiada">Pràctica guiada</h2>
+<p>Realitza <a href="../recursos/ud1/DIW_UD2_P2_1_guiada.pdf">aquesta</a></p>
+<p>Has de partir dels següents arxius</p>
+<div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Curso HTML5 y CSS3<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;estiloscss3.css&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="cm">&lt;!--[if lt IE 9]&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="cm">        &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="cm">        &lt;/script&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="cm">        &lt;![endif]--&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="p">&lt;</span><span class="nt">header</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;principal&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Curso HTML5 y CSS3<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></code></pre></div></td></tr></table></div>
-Amb això, el netejat de <code>floats</code> funcionarà en tots els navegadors moderns.</p>
-<p>Elements de la classe <code>article_header</code>:</p>
-<ul>
-<li>Vora inferior de 1px sòlid i color #999999.</li>
-</ul>
-<p>Elements <code>&lt;h2&gt;</code>:</p>
-<ul>
-<li>Marges interns 10px.</li>
-<li>Grandària de font 1.2em.</li>
-</ul>
-<p>Element <code>footer</code>:</p>
-<ul>
-<li>Haurà de col·locar-se davall dels elements flotants.</li>
-<li>Font de color white i grandària 0.7em.</li>
-<li>Text alineat al centre.</li>
-<li>Color de fons #313B44.</li>
-<li>Vora superior de 6px color black i sòlid.</li>
-<li>Marges interns superior i inferior de 15px.</li>
-</ul>
-<p>Enllaços que es troben dins de l'element <code>footer</code>:
--   Color de font blanc.</p>
-<p>Amb això hauríem acabat l'exercici i hauria de visualitzar-se la pàgina web tal com apareix en la imatge.</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">#</span><span class="nn">principal</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">px</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#999999</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#DDDDDD</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">#</span><span class="nn">titulo</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="w"> </span><span class="mi">36</span><span class="kt">px</span><span class="w"> </span><span class="n">verdana</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 
 
 
