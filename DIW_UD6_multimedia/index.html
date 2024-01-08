@@ -1871,7 +1871,12 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#canvas" class="md-nav__link">
     <span class="md-ellipsis">
       Canvas
@@ -1947,11 +1952,6 @@
       Pas 5: Gestió d'events (Exemple: Mous)
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2378,7 +2378,12 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#canvas" class="md-nav__link">
     <span class="md-ellipsis">
       Canvas
@@ -2454,11 +2459,6 @@
       Pas 5: Gestió d'events (Exemple: Mous)
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2802,9 +2802,9 @@
 <h4 id="7-cache-i-cdn">7. <strong>Cache i CDN:</strong></h4>
 <p>Utilitza serveis de Content Delivery Network (CDN) per optimitzar la distribució dels teus arxius d'àudio. També pots aprofitar les polítiques de cache per millorar la càrrega de la pàgina.</p>
 <p>Optimitzar arxius d'àudio és una part important de l'optimització web general. Prova diferents configuracions i mides de fitxers per trobar el millor equilibri entre qualitat i grandària del fitxer per a les necessitats específiques del teu lloc web.</p>
-<h3 id="canvas">Canvas</h3>
+<h2 id="canvas">Canvas</h2>
 <p>Clar, aquí tens un senzill tutorial per començar a utilitzar l'element <code>&lt;canvas&gt;</code> en HTML5. L'element <code>&lt;canvas&gt;</code> permet dibuixar gràfics, animacions i d'altres elements visuals en una pàgina web.</p>
-<h4 id="pas-1-crear-lestructura-html">Pas 1: Crear l'estructura HTML</h4>
+<h3 id="pas-1-crear-lestructura-html">Pas 1: Crear l'estructura HTML</h3>
 <div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
@@ -2845,19 +2845,19 @@
 </span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></code></pre></div></td></tr></table></div>
-<h4 id="pas-2-accedir-al-canvas-des-de-javascript">Pas 2: Accedir al Canvas des de JavaScript</h4>
+<h3 id="pas-2-accedir-al-canvas-des-de-javascript">Pas 2: Accedir al Canvas des de JavaScript</h3>
 <p>Utilitza JavaScript per obtenir el context del canvas. El context determina si estàs treballant amb gràfics 2D o 3D. Per ara, ens centrarem en 2D.</p>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
 <span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myCanvas&#39;</span><span class="p">);</span>
 </span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
 </span></code></pre></div></td></tr></table></div>
-<h4 id="pas-3-dibuixar-formes-basiques">Pas 3: Dibuixar formes bàsiques</h4>
-<h5 id="dibuixar-un-rectangle">Dibuixar un rectangle:</h5>
+<h3 id="pas-3-dibuixar-formes-basiques">Pas 3: Dibuixar formes bàsiques</h3>
+<h4 id="dibuixar-un-rectangle">Dibuixar un rectangle:</h4>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
 <span class="normal"><a href="#__codelineno-27-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Color de ple per al rectangle</span>
 </span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">);</span><span class="w"> </span><span class="c1">// Posició x, y i dimensions width, height</span>
 </span></code></pre></div></td></tr></table></div>
-<h5 id="dibuixar-un-cercle">Dibuixar un cercle:</h5>
+<h4 id="dibuixar-un-cercle">Dibuixar un cercle:</h4>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
 <span class="normal"><a href="#__codelineno-28-2">2</a></span>
 <span class="normal"><a href="#__codelineno-28-3">3</a></span>
@@ -2866,14 +2866,14 @@
 </span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"> </span><span class="c1">// Posició x, y, radi, angle inicial, angle final</span>
 </span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
 </span></code></pre></div></td></tr></table></div>
-<h4 id="pas-4-afegir-text-al-canvas">Pas 4: Afegir text al Canvas</h4>
+<h3 id="pas-4-afegir-text-al-canvas">Pas 4: Afegir text al Canvas</h3>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
 <span class="normal"><a href="#__codelineno-29-2">2</a></span>
 <span class="normal"><a href="#__codelineno-29-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="nx">context</span><span class="p">.</span><span class="nx">font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;20px Arial&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Estil de la font</span>
 </span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;black&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Color del text</span>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="nx">context</span><span class="p">.</span><span class="nx">fillText</span><span class="p">(</span><span class="s1">&#39;Hello, Canvas!&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">180</span><span class="p">);</span><span class="w"> </span><span class="c1">// Text i posició x, y</span>
 </span></code></pre></div></td></tr></table></div>
-<h4 id="pas-5-gestio-devents-exemple-mous">Pas 5: Gestió d'events (Exemple: Mous)</h4>
+<h3 id="pas-5-gestio-devents-exemple-mous">Pas 5: Gestió d'events (Exemple: Mous)</h3>
 <p>Afegir un event listener per detectar clics de ratolí:</p>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
 <span class="normal"><a href="#__codelineno-30-2">2</a></span>
